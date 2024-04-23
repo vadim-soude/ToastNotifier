@@ -1,8 +1,8 @@
-name: ToatsNotifier
+name: ToastNotifier
 version: '${version}'
-main: fr.vadimsoude.toatsnotifier.ToatsNotifier
+main: fr.vadimsoude.toastnotifier.ToastNotifier
 api-version: '1.20'
-prefix: ToatsNotifier
+prefix: ToastNotifier
 load: STARTUP
 authors: [Vadim Soudé]
 description: Test for Rivrs admission

@@ -1,8 +1,8 @@
-package fr.vadimsoude.toatsnotifier;
+package fr.vadimsoude.toastnotifier;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class ToatsNotifier extends JavaPlugin {
+public final class ToastNotifier extends JavaPlugin {
 
     @Override
     public void onEnable() {
