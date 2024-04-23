@@ -1,0 +1,8 @@
+name: ToatsNotifier
+version: '${version}'
+main: fr.vadimsoude.toatsnotifier.ToatsNotifier
+api-version: '1.20'
+prefix: ToatsNotifier
+load: STARTUP
+authors: [Vadim Soudé]
+description: Test for Rivrs admission
