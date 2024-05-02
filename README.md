@@ -12,7 +12,7 @@ Example :
 
 ## Using it
 
-You can send these notifications using the custom command provided by the plugin ([see wiki for help]()).
+You can send these notifications using the custom command provided by the plugin (see below for help).
 
 The plugin include a queue system for the notifications, allowing you to send notification to the player and being sure that each of the notifications are display as intended and in the order in which you sent them on the player screen !
 
