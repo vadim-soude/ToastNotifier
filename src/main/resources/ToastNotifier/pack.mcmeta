@@ -1,6 +1,7 @@
 {
     "pack": {
         "pack_format": 22,
-        "description": "Rivrs test"
+        "description": "§b§lToast Notification§r - By §l§6Reytz §r- For §l§aRivrs§r",
+	"author": "Reytz"
     }
 }

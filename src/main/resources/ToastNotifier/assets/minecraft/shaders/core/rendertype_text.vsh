@@ -1,5 +1,7 @@
 #version 150
 
+// By Reytz for Rivrs - minecraft 1.20.4
+
 #moj_import <fog.glsl>
 
 in vec3 Position;
