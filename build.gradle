@@ -3,7 +3,7 @@ plugins {
 }
 
 group = 'fr.vadimsoude'
-version = '1.0.0'
+version = '1.2'
 
 repositories {
     mavenCentral()
@@ -15,10 +15,12 @@ repositories {
         name = "sonatype"
         url = "https://oss.sonatype.org/content/groups/public/"
     }
+    maven { url = "https://repo.codemc.org/repository/maven-public/" }
 }
 
 dependencies {
     compileOnly "io.papermc.paper:paper-api:1.20.4-R0.1-SNAPSHOT"
+    compileOnly "dev.jorel:commandapi-bukkit-core:9.3.0"
 }
 
 def targetJavaVersion = 17

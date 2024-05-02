@@ -1,0 +1,24 @@
+permission: notification.others # Permission pour utiliser la commande
+
+notifications:
+  # Temps en millisecondes
+  fadeIn: 1000 # Durée d'apparition de l'animation
+  stay: 2000 # Durée de la notification
+  fadeOut: 1000 # Durée de disparition de l'animation
+
+fonts:
+  card: rivrs:toast-card
+  title: rivrs:toast-title
+  first-row: rivrs:toast-text-1
+  second-row: rivrs:toast-text-2
+
+images:
+  light:
+    font: rivrs:toast-img
+    unicode: 0001
+  blue:
+    font: rivrs:toast-img
+    unicode: 0002
+  purple:
+    font: rivrs:toast-img
+    unicode: 0003

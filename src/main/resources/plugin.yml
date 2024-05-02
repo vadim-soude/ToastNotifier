@@ -1,5 +1,7 @@
 name: ToastNotifier
-version: '${version}'
+version: '1.0.0'
+depend:
+  - CommandAPI
 main: fr.vadimsoude.toastnotifier.ToastNotifier
 api-version: '1.20'
 prefix: ToastNotifier
