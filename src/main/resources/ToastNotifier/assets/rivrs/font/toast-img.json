@@ -1,0 +1,31 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "rivrs:font/img/light.png",
+            "ascent": 7,
+            "height": 50,
+            "chars": [
+                "\u0001"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "rivrs:font/img/blue.png",
+            "ascent": 7,
+            "height": 50,
+            "chars": [
+                "\u0002"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "rivrs:font/img/purple.png",
+            "ascent": 7,
+            "height": 50,
+            "chars": [
+                "\u0003"
+            ]
+        }
+    ]
+}

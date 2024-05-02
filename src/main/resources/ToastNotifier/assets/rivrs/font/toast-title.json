@@ -1,0 +1,26 @@
+{
+    "providers": [
+        {
+            "file": "rivrs:font/toast-title.png",
+            "ascent": 1,
+            "height": 10,
+            "chars": [
+              "ABCDEFGHIJKLMNOP",
+              "QRSTUVWXYZ,\u0000?!-/",
+              "abcdefghijklmnop",
+              "qrstuvwxyz()[]._",
+              "0123456789\u0000\u0000\u0000\u0000\u0000\u0000",
+              "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000€\u0000\u0000\u0000",
+              "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+              "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
+            ],
+            "type": "bitmap"
+        },
+        {
+            "type": "space",
+            "advances": {
+                " ": 7
+            }
+        }
+    ]
+}
