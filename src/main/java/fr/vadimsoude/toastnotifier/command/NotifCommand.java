@@ -17,10 +17,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class NotifCommand {
-    private final ToastNotifier plugin;
 
-    public NotifCommand(ToastNotifier plugin) {
-        this.plugin = plugin;
+    public NotifCommand() {
         this.registerNotifCommand();
     }
 
@@ -49,7 +47,7 @@ public class NotifCommand {
                     List<String> jsonElements = decodeJson(json);
 
                     if (jsonElements.size() == 3) {
-                        Notification notif = new Notification(plugin, target, imageName, jsonElements.get(0), jsonElements.get(1), jsonElements.get(2));
+                        Notification notif = new Notification(target, imageName, jsonElements.get(0), jsonElements.get(1), jsonElements.get(2));
                         notif.send();
                     } else {
                         if (sender instanceof Player) {

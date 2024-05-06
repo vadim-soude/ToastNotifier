@@ -20,7 +20,7 @@ public class Notification {
     private final String secondRow;
     private Title result;
 
-    public Notification(ToastNotifier plugin, Player target, String imageName, String title, String firstRow, String secondRow) {
+    public Notification(Player target, String imageName, String title, String firstRow, String secondRow) {
         this.target = target;
         this.delays = Config.getDefaultDelays();
         this.imageName = imageName;

@@ -8,15 +8,17 @@ import org.bukkit.plugin.java.JavaPlugin;
 public final class ToastNotifier extends JavaPlugin {
 
     public static Queue queue = new Queue();
+    public static ToastNotifier plugin;
 
     @Override
     public void onEnable() {
+        plugin = this;
 
         saveDefaultConfig();
 
-        new Config(this);
-        new NotifCommand(this);
+        new Config();
+        new NotifCommand();
 
-        queue.run(this);
+        queue.run();
     }
 }

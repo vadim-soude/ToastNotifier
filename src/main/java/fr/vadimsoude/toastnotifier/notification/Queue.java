@@ -17,10 +17,10 @@ public class Queue {
         this.map = new ConcurrentHashMap<>();
     }
 
-    public void run(ToastNotifier plugin) {
+    public void run() {
         Delays configDelay = Config.getDefaultDelays();
         int tickDelay = Math.round((configDelay.fadeIn() + configDelay.stay() + configDelay.fadeOut()) / 50f);
-        Bukkit.getScheduler().runTaskTimerAsynchronously(plugin, () -> {
+        Bukkit.getScheduler().runTaskTimerAsynchronously(ToastNotifier.plugin, () -> {
             map.forEach( (key,value) -> {
                 if(value.isEmpty()){
                     map.remove(key);
