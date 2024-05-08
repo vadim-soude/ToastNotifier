@@ -82,7 +82,7 @@ To send a notification you need to provide the target, the image name as defined
 
 Then, you need to use the ``.send()`` method to send the notification to the player (the notification will end-up in the queue if another notification is currently displayed).
 
-#### Example of a notification sent to any player that join the server :
+#### Example of a notification sent to players when they join the server :
 
 ```Java
 public class ListenerExample implements Listener {
@@ -92,6 +92,19 @@ public class ListenerExample implements Listener {
         notification.send();
     }
 }
+```
+
+#### Example of a notification, with custom delays, sent to players when they level up :
+
+```Java
+    @EventHandler
+    public void onLevelUp(PlayerLevelChangeEvent event) {
+        if (event.getNewLevel() > event.getOldLevel()) {
+            Delays delay = new Delays(100, 1800, 100);
+            Notification notification = new Notification(event.getPlayer(), "light", "Level UP !", "you just gained", "a level.", delay);
+            notification.send();
+        }
+    }
 ```
 
 # Have fun !
