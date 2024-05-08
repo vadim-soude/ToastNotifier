@@ -19,9 +19,8 @@ public class Queue {
     }
 
     public void run() {
-        long currentTimestamp = System.currentTimeMillis();
-
         Bukkit.getScheduler().runTaskTimerAsynchronously(ToastNotifier.plugin, () -> {
+            long currentTimestamp = System.currentTimeMillis();
             map.forEach((key, value) -> {
                 if (value.isEmpty()) {
                     map.remove(key);
@@ -30,7 +29,6 @@ public class Queue {
                         Notification notif = value.get(0);
                         key.showTitle(notif.getResult());
                         value.remove(0);
-                        map.put(key, value);
                         delay.put(key, currentTimestamp + notif.getDelays().getTotal());
                     }
                 }
