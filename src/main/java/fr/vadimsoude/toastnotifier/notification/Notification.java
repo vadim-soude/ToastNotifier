@@ -12,6 +12,7 @@ import org.bukkit.entity.Player;
 import java.time.Duration;
 
 public class Notification {
+
     private final Delays delays;
     private final Player target;
     private final String imageName;
@@ -23,6 +24,16 @@ public class Notification {
     public Notification(Player target, String imageName, String title, String firstRow, String secondRow) {
         this.target = target;
         this.delays = Config.getDefaultDelays();
+        this.imageName = imageName;
+        this.title = title;
+        this.firstRow = firstRow;
+        this.secondRow = secondRow;
+        this.build();
+    }
+
+    public Notification(Player target, String imageName, String title, String firstRow, String secondRow, Delays customDelays) {
+        this.target = target;
+        this.delays = customDelays;
         this.imageName = imageName;
         this.title = title;
         this.firstRow = firstRow;
@@ -98,7 +109,7 @@ public class Notification {
     }
 
     public void send() {
-        ToastNotifier.queue.sendNotificationInQueue(this);
+        ToastNotifier.queue.sendNotificationToQueue(this);
     }
 
     public Player getTarget() {
@@ -107,6 +118,10 @@ public class Notification {
 
     public Title getResult() {
         return result;
+    }
+
+    public Delays getDelays() {
+        return delays;
     }
 
 
